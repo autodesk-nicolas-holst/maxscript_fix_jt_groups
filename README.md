@@ -6,7 +6,9 @@ It also doesn't create instances even though those are present in the .jt file.
 
 This script has the following parameters defined near the top (1 means active, 0 means it will be skipped):
 
+
 group_children_rename=1
+
 This searches for groups containing an object with a "jt_obj_" prefix. It then removes the group and renames the object with the group name.
 
 create_instances_from_identically_named_objects=0
@@ -17,5 +19,7 @@ Two different algoritms for this one:
 
 WARNING: this is highly risky because it just checks that we do it on editable meshes with the same number of faces, v5 addes a check for the total face area. Use at your own risk!
 
+
 make_all_instances_unique=0
+
 Iterates through all objects and makes them unique
