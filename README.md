@@ -9,11 +9,12 @@ This script has the following parameters defined near the top (1 means active, 0
 group_children_rename=1
 This searches for groups containing an object with a "jt_obj_" prefix. It then removes the group and renames the object with the group name.
 
-create_instances_from_identically_named_objects=1
+create_instances_from_identically_named_objects=0
 This finds objects with the same name and converts them to be instances of the first one. 
 Two different algoritms for this one:
 1. do this across the entire scene
 2. do this per group
+WARNING: this is highly risky because it just checks that we do it on editable meshes with the same number of faces. In most of my tests that changes something in the model. Use at your own risk!
 
 make_all_instances_unique=0
 Iterates through all objects and makes them unique
