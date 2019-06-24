@@ -11,7 +11,10 @@ group_children_rename=1
 
 This searches for groups containing an object with a "jt_obj_" prefix. It then removes the group and renames the object with the group name.
 
+
 create_instances_from_identically_named_objects=0
+
+
 This finds objects with the same name and converts them to be instances of the first one. 
 Two different algoritms for this one:
 1. do this across the entire scene
