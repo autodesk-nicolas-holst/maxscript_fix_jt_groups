@@ -14,7 +14,8 @@ This finds objects with the same name and converts them to be instances of the f
 Two different algoritms for this one:
 1. do this across the entire scene
 2. do this per group
-WARNING: this is highly risky because it just checks that we do it on editable meshes with the same number of faces. In most of my tests that changes something in the model. Use at your own risk!
+
+WARNING: this is highly risky because it just checks that we do it on editable meshes with the same number of faces, v5 addes a check for the total face area. Use at your own risk!
 
 make_all_instances_unique=0
 Iterates through all objects and makes them unique
